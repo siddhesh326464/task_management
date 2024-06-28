@@ -87,6 +87,7 @@ __pycache__/
 __pycache__/apps.*
 local_settings.py
 
+migrations/
 .env
 db.sqlite3
 *.pyc
