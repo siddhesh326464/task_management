@@ -21,7 +21,7 @@ def login_eu(username,password):
         user = Account.objects.get(username = username)
         if not user:
             return 1000
-        if not user.check_password(password = password):
+        if not user.check_password(password):
             return 1002
         jwt_response = get_token_for_user(user)
         if not jwt_response:
